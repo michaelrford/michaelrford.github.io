@@ -1,325 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index of /</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            
+    <title>Michael Ford</title>
+
+<style>
+    body {
+        background-color: rgb(223, 223, 223);
+        margin-left: 100px;
+        margin-right: 100px;
+  
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+     @media (max-width: 768px) {
+        .gallery {
+            grid-template-columns: 1fr;
         }
-
-        body {
-            max-width: 750px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 12px;
-        }
-
-        h1 {
-            font-size: 24px;
-        }
-
-        h5 {
-            font-size: 16px;
-             
-        }
-
-        .column {
-            float: top;
-            width: 100%;
-            padding-right: 3px;
-
-        }
-
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        a,
-        a:active {
-            text-decoration: none;
-            color: rgb(25, 0, 255);
-        }
-
-        a:hover,
-        a:focus {
-            text-decoration: underline;
-            color: white;
-        }
-
-        details:hover {
-            cursor: pointer;
-        }
-
-        .image {
-            margin-top: 20px;
-            margin-left: 10px;
-        }
-
-        hr {
-            margin-right: 10px;
-            color: rgb(88, 88, 88);
-        }
-
-        hr.bottom {
-            margin-top: 20px;
-        }
-
-        details {
-            margin-left: 10px;
-            margin-right: 10px;
-            
-        }
-
-        summary {
-            color: rgb(25, 0, 255);
-            margin-top: 5px;
-            list-style: none;
-            text-decoration: underline;
-           
-        }
-
-        details summary::-webkit-details-marker {
-            display: none;
-        }
-
-        p {
-            color: rgb(0, 0, 0);
-        }
-
-        p.update {
-            font-size: 10px;
-            color: rgb(0, 0, 0);
-
-        }
-
-      
-    </style>
+    }
+</style>
 </head>
-
 <body>
-    <h1>michaelrford.github.io</h1>
 
-    <hr>
+<div class="gallery">
 
-    <!--INTRO-->
+    <img src="pictures/Screenshot 2025-12-21 121446.jpg">
+    <img src="pictures/Screenshot 2025-12-21 132400.jpg">
+    <img src="pictures/Screenshot 2025-12-21 140455.jpg">
 
-    <p>Hello, this is is my index of/ minimalist NO-JS inspired site that I use for my latest projects, blog posts and interests. 
-       I'm a freelance web developer with a background in science who loves tinkering with old hardware I have laying around, gaming, 
-       home networking and computer history.</p>
+    <img src="pictures/Screenshot 2025-12-20 163059.jpg">
+    <img src="pictures/Screenshot 2025-12-20 173708.jpg">
+    <img src="pictures/Screenshot 2025-12-22 122520.jpg">
 
-    <!-- PROJECTS -->
+    <img src="pictures/Screenshot 2025-12-14 130617.jpg">
+    <img src="pictures/Screenshot 2025-12-14 134612.jpg">
+    <img src="pictures/Screenshot 2025-12-14 140930.jpg">
 
-    <h5>PROJECTS</h5>
+    <img src="pictures/Screenshot 2025-12-13 175001.jpg">
+    <img src="pictures/Screenshot 2025-12-13 183848.jpg">
+    <img src="pictures/Screenshot 2025-12-13 184204.jpg">
 
-    <details name="reqs">
-        <summary>Email signatures</summary>
-        <p> Email signatures for a client that were done in html using table elements. A number of alterations were made during the process
-            to optimise the layout for better readability. 
-            <br><br>
-            <a href="https://github.com/michaelrford">#github</a>
-            <br><br>
-            <img src="images/Screenshot.png" style="width: 75%;">
-        </p>
-    </details>
-
-    <details name="reqs">
-        <summary>Detail cleaning website</summary>
-        <p> Website for a local cleaning company, built with wix framework where customers can schedule a cleaning
-            service online.
-            <br><br>
-            <a href="https://www.pinnacleprecision.com.au">pinnacleprecision.com.au</a>
-            <br>
-            <br>
-            <img src="images/About-Us-Pinnacle-Precision.png" style="width: 100%;">
-        </p>
-    </details>
-
-    <details name="reqs">
-        <summary>API image search</summary>
-        <p>An API image search web app that uses the Unspash API.
-            An async function uses the unsplash url and access key to display the images within an independent app.
-            The app is designed to load a total of nine images initially, with a show more button that loads a further
-            nine new images.
-            <br><br>
-            <a href="https://github.com/michaelrford/API-image-search">#github</a>
-            <br><br>
-            <img src="images/linux.png" style="width:100%">
-
-        </p>
-    </details>
-
-    <details name="reqs">
-        <summary>Browser ide</summary>
-        <p>A web app IDE that allows for HTML, CSS and JS input with an output display.
-            The input areas are small as its only meant for playing around.
-            The JS just uses getElementByID tags for the HTML textarea.
-            I'm thinking of just a HTML version for prototyping plain text websites that can display mutiple pages at
-            once.
-            <br><br>
-            <a href="https://github.com/michaelrford/code-editor">#github</a>
-            <br> <br>
-            <img src="images/Capture3.png" style="width:100%">
-        </p>
-    </details>
-
-    <details name="reqs">
-        <summary>Text editor</summary>
-        <p>A text editor for the web that allows for a few basic functions.
-            The editor provides the basic layout of a document where a user can input, edit and delete their data.
-            It resembles most other editors out there to keep it user fiendly and so that adjustments can be made
-            easily. <br> <br>
-            I got a few functions to work such as, text colour, alignment, size and format.
-            The colour pallet needs refinement as the text only changes to the colour picked, the second time a colour
-            is chosen. <br> <br>
-            I was working my way through the essential formatting tools but didn't implement the save function,
-            eventhough the icon exists in the menu.
-            I find myself drawn to the fundamental software tools, such as text editors, IDEs, communication apps, as I
-            find myself motivated to see how they work and find them the most practical. <br> <br>
-            The first text editor I tried to make was in python but it was a mess. This one was a lot easier but my goal
-            is to try building a few text editors in different languages.
-            <br><br>
-            <a href="https://github.com/michaelrford">#github</a>
-            <br> <br>
-            <img src="images/text_editor2.png" style="width:100%">
-        </p>
-    </details>
-
-    <details name="reqs">
-        <summary>JS crud app</summary>
-        <p>A very simple app that allows for basic crud activities such as input, editing and deleting.
-            A product code, name, quantity and price can be entered and stored in a table next to the input. <br> <br>
-            Attributes can be altered if neseccary through editing.
-            Entries are separated with a coloured background to easily differentiate between each product
-            The functions used are just getElementByID tags that allow for editing the input data.
-            <br><br>
-            <a href="https://github.com/michaelrford/JS-crud-app">#github</a>
-            <br><br>
-            <img src="images/crud2.png" style="width: 100%;">
-        </p>
-    </details>
+    <img src="pictures/Screenshot 2025-12-22 124631.jpg">
+    <img src="pictures/Screenshot 2025-12-22 125212.jpg">
+    <img src="pictures/Screenshot 2025-12-22 124605.jpg">
 
 
-    <!-- BLOG POSTS< -->
 
-    <h5>BLOG POSTS</h5>
+</div>
 
-    <details name="reqs">
-        <summary>PC Troubleshooting: Recent Hardware Issues</summary>
-        <p>- 17 August 2024 -<br><br>
-            Over the past few months I've faced a series of challenges with my setup, ranging from power issues to
-            frustrating stutters during gaming sessions. Here's a few problems I faced and how I fixed them, or plan to,
-            as well as future plans for hardware upgrades.
-            <br><br>
-            I noticed that my PC, which had been idle for a while as I relied mostly on my laptop, refused to power on.
-            My assumption was the PSU just based on past experience. However, I decided to troubleshoot a bit before
-            buying a new unit. I tried different power cables and carefully reconnected all the internal hardware
-            components, but still no luck.
-            <br><br>
-            Eventually, I decided to bite the bullet and purchase a new PSU, opting to upgrade from a 500W to a 550W
-            unit. After swapping out the old one and connecting everything, I hit the power button and voilà! The PC
-            sprang back to life, good as new. Thankfully, nothing was damaged or corrupted, and the upgraded PSU seems
-            to be doing its job perfectly.
-            <br><br>
-            Recently I encountered some serious frame rate issues and stuttering. My first thought was that some
-            background GUI process might be hogging resources. But after ruling that out, updating my NVIDIA drivers,
-            and even lowering in-game settings and resolution, the problem persisted.
-            <br><br>
-            Finally, I decided to investigate the hardware itself and discovered the culprit: dust. Specifically, three
-            massive chunks of dust had accumulated in the GPU, preventing the fan from spinning properly. I pulled out
-            one, then another and another. After a thorough cleaning, I fired up the same games (Snowrunner &
-            Cyberpunk), cranked the settings back to high, and everything ran smoothly again. It was a good reminder of
-            how critical regular maintenance is.
-            <br><br>
-            When I initially set up my PC a few years ago, I somehow missed the fact that my motherboard had a built-in
-            Ethernet port. Instead, I relied on a Wi-Fi adapter/dongle for my internet connection. So I decided it was
-            time to upgrade to a network card for a more stable connection. I installed the card only to realize that my
-            PSU didn’t have any spare cables to power it.
-            <br><br>
-            But all was not lost, I finally noticed the Ethernet port on my motherboard. A quick connection later, and I
-            bid farewell to the Wi-Fi dongle. Now my PC is connected directly to my very basic unmanaged switch.
-            <br><br>
-            Finally, there's the issue with my Acer ultra-wide curved screen monitor. This screen has been great to use,
-            especially for gaming and multitasking with multiple apps or browser windows open side by side. But one day,
-            it suddenly decided to stay black. The power light was on, but the screen remained blank.
-            <br><br>
-            I searched online for similar issues but found nothing specific to this model. To make matters worse, the
-            function buttons on the monitor stopped working as well. For now, it's sitting in the corner of my room,
-            waiting to be sent off for repairs. In the meantime, I’ve resorted to using an old TV monitor for my daily
-            tasks definitely not ideal, but it gets the job done.
-            <br><br>
-            Its been a good learning experience, and getting things going again is always a rewarding feeling. The only
-            short term hardware upgrades I have planned for my setup are RAM for both PC and server, time to make the
-            jump from 16 to 32Gb.
-            <br><br>
-            <a href="https://guiisbloat.blogspot.com/2024/08/pc-troubleshooting-recent-hardware.html">#blog</a>
-        </p>
-    </details>
-    <details name="reqs">
-        <summary>Turning a Refurbished Dell Optiplex into an Ubuntu Server</summary>
-        <p>- 05 August 2024 -<br> <br>
-            I recently dove into a tech project I'd seen others online do, turning a refurbished Dell Optiplex into a
-            fully functional Ubuntu server.
-            <br><br>
-            I grabbed a refurbished Dell Optiplex for $120. It came with a 120GB SSD, 8GB of RAM, and an Intel Core i5
-            processor. For a machine that’s not brand new, it’s almost on par with the gaming rig I put together a few
-            years back, minus the GPU.
-            <br><br>
-            The first thing I did was ditch Windows 10. I wanted to install Ubuntu Server for this project. I used a
-            bootable USB stick with Ubuntu Server on it and wiped the SSD clean. The installation was straightforward,
-            just follow the prompts. It didn’t take long, and soon I had a fresh Ubuntu server ready to go.
-            <br><br>
-            I'm using Ubuntu server just as a trial run, to see how it operates and behaves. I might stick with it, I
-            might not. I would also like to try Rocky Linux or Debian.
-            <br><br>
-            Next up, I needed a way to keep an eye on the server. I chose cockpit as its a web based monitoring tool and
-            so far its been a piece of cake. I get real-time stats on CPU usage, memory, disk space, and more.
-            <br><br>
-            Once installed, I could log in through my web browser (localhost:9090) and get a nice, clean dashboard to
-            manage everything, including the terminal remotely. It’s been handy for keeping track of how the server is
-            doing and handling basic admin tasks.
-            <br><br>
-            A few ideas for the next steps:
-            <br><br>
-            Web Hosting: I’m planning to set up the server for web hosting. I'd like to configure a web server like
-            Apache or Nginx and maybe even set up a database for dynamic sites.
-            <br><br>
-            Virtualisation: I’m also thinking about trying out virtualisation. With 8GB of RAM, the Optiplex should
-            handle a few lightweight virtual machines. I’m looking at tools like VirtualBox or KVM to create and manage
-            these virtual environments.
-            <br><br>
-            That's it for now, it’s been a straightforward project with some rewarding results so far. I'm looking
-            forward to the next steps and to see how it holds up.
-            <br><br>
-            <a href="https://guiisbloat.blogspot.com/2024/08/turning-refurbished-dell-optiplex-into.html">#blog</a>
-        </p>
-    </details>
-    <details name="reqs">
-        <summary>Building a Simple Image Search Engine with the Unsplash API</summary>
-        <p>- 03 August 2024 -<br><br>
-            Recently, I embarked on a project to build a simple image search engine using the Unsplash API. Here’s a
-            step-by-step guide to how I did it.
-            First, I signed up on the Unsplash website to get access to their API. Once registered, I created a new
-            application to obtain my API key, which is necessary to authenticate requests.
-            <br><br>
-            I used Python for this project due to its simplicity and the availability of powerful libraries.
-            I designed a simple HTML form in index.html where users can search query.
-            <br><br>
-            After setting up the project, I tested it locally to ensure it worked as expected. Users could input a
-            search term, and the application would fetch and display relevant images from Unsplash.
-            <br><br>
-            This project was mostly for fun and experience to get an idea of APIs and how they work.
-            <br><br>
-            <a href="https://guiisbloat.blogspot.com/2024/08/building-simple-image-search-engine.html">#blog</a>
-        </p>
-    </details>
-
-    <hr class="bottom">
-    <p class="update">2025 | No-JS | michaelryanford@gmail.com</p>
 </body>
-
 </html>
